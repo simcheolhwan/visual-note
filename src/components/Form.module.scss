@@ -1,0 +1,34 @@
+.input {
+  background: transparent;
+  color: inherit;
+  text-align: center;
+  text-shadow: inherit;
+  width: 100%;
+}
+
+$width: 16px;
+$gutter: 1px;
+
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  width: (($width + 2 * $gutter) * 6);
+
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.color {
+  cursor: pointer;
+  display: block;
+  border: 2px solid fade-out(black, 0.1);
+  width: $width;
+  height: $width;
+  margin: $gutter;
+
+  &:hover {
+    box-shadow: 0 0 3px fade-out(black, 0.5);
+  }
+}
