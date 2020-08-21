@@ -27,6 +27,7 @@ const Form = ({ id, point }: { id: string; point: Point }) => {
         onKeyDown={handleKeyDown}
         ref={inputRef}
         autoFocus
+        autoComplete="off"
       />
 
       <section className={styles.colors}>

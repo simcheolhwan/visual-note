@@ -15,9 +15,18 @@
   border-color: fade-out(white, 0.8);
   border-radius: 50%;
   text-shadow: 1px 1px 0 black;
-}
 
-.active {
-  border-color: fade-out(white, 0.5);
-  z-index: 9999;
+  &:hover {
+    border-color: fade-out(white, 0.5);
+  }
+
+  &.cursor {
+    border-color: fade-out(black, 0.8);
+    pointer-events: none;
+  }
+
+  &.active {
+    border-color: fade-out(yellow, 0.5);
+    z-index: 9999;
+  }
 }
